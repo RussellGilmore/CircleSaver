@@ -4,7 +4,8 @@
   "description": "A really weird screensaver.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "electron:build": "mkdirp ./dist && electron-packager . circlesaver --out=dist"
   },
   "author": "Russell Gilmore",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "electron": "^1.7.9"
   },
   "devDependencies": {
-    "electron-packager": "^9.1.0"
+    "electron-packager": "^9.1.0",
+    "mkdirp": "^0.5.1"
   }
 }
